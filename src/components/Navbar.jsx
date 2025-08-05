@@ -2,8 +2,11 @@ import "../css/Navbar.css"
 import "../css/CartWidget.css"
 import CarWidget from "./CartWidget"
 import { NavLink } from "react-router-dom"
+import { useContext } from "react"
+import { CartContext } from "../context/CartContext"
 
 const Navbar = () => {
+ const {cart}= useContext (CartContext)  
  return(
    <nav className="nav-container">
         <NavLink to='/'>
@@ -14,7 +17,7 @@ const Navbar = () => {
         <NavLink className="enlaces-nav" to= '/categories/Día de Spa'>Día de Spa</NavLink>
         <NavLink className="enlaces-nav" to= '/categories/Faciales'>Faciales</NavLink>
         <NavLink className="enlaces-nav" to= '/categories/Masajes Descontracturantes'>Masajes Descontracturantes</NavLink>
-        <CarWidget/> 
+        { cart.length >0 && <NavLink to= '/cart' style={{textDecoration:'none', color:'black'}}><CarWidget/> </NavLink> }
    </nav>
   )
 }

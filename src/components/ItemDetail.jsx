@@ -11,7 +11,7 @@ const ItemDetail = ({detalle}) => {
   }
 console.log (cart,'cart' )
   return (
-    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+    <div style={{display:'flex', flexDirection:'column', alignItems:'center' }}>
        <h2>Detalle de: {detalle.name}</h2>
        <img alt= {detalle.name} src={detalle.img}/>
        <p>{detalle.description}</p>

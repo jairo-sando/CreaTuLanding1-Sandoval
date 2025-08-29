@@ -13,7 +13,7 @@ const ItemListContainer = ({saludo}) => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
    const {category}= useParams()
-   //console.log(category, 'categoria')
+  
 
   useEffect (()=> {
      setLoading (true)
@@ -37,24 +37,7 @@ const ItemListContainer = ({saludo}) => {
   }, [category])
   
   
-   //useEffect (()=>{
-   //  setLoading (true)
-   //  getProducts()
-   // .then ((res)=> {
-   //    if(category){
-   //       setData(res.filter((prod)=> prod.category === category))
-   //    }else{
-
-   //       setData(res)
-   //    }
-      
-   //   })
-   //  .catch ((error)=> console.log(error))
-   //  .finally (()=> setLoading(false) )
-   //}, [category] )
-
-
-
+   
   return(
     <>
    

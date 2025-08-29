@@ -36,15 +36,6 @@ useEffect(()=> {
 
 
 
-    
-//     useEffect(()=>{
-//        setCarga (true)
-//        getOneProduct(id)
-//        .then((res)=> setDetalle(res))
-//        .catch((error)=> console.log(error))
-//        .finally (()=> setCarga(false)) 
-//     },[])
-
  
  if (invalid){
    

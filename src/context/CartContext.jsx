@@ -56,13 +56,25 @@ const cartTotal = () => {
  }
 
 
- const isInCart= (id)=> {
+    const isInCart= (id)=> {
     return cart.some ((prod)=> prod.id === id )
    
-  }
+    }
 
-   return (
-     <CartContext.Provider value={{cart, clear, addItem, removeItem, cartQuantity, cartTotal}}>
+   const itemQuantity = (id)=> {
+       const itemInCart = cart.find ((item)=> item.id === id ) 
+       if(itemInCart){
+         
+         return itemInCart.quantity
+       } else {
+         return 0
+       }
+   
+   }
+
+
+ return (
+     <CartContext.Provider value={{cart, clear, addItem, removeItem, cartQuantity, cartTotal, itemQuantity}}>
           {children}
      </CartContext.Provider>
 

@@ -1,12 +1,31 @@
-# React + Vite
+# El Rincón del Descanso App 🧖🏼
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En El Rincón del Descanso nos especializamos en ofrecer una experiencia integral de bienestar a través de una variedad de masajes diseñados para equilibrar cuerpo y mente. Nuestro objetivo es brindar a cada cliente un espacio de relajación, salud y renovación, con técnicas personalizadas que se adaptan a sus necesidades.
 
-Currently, two official plugins are available:
+![app](/public/Rincon_del_descanso.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instalación
 
-## Expanding the ESLint configuration
+1. Clonar repositorio
+2. Hacer el comando `cd CreaTuLanding1-Sandoval`de esta forma, podrás moverte a la carpeta principal del proyecto.
+3. Instale dependencias con el comando `npm install`.
+4. Para levantar la app en el servidor local ejecute el comando `npm run dev`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+### Versión Host 
+
+Si desea ver el proyecto de forma online, ingrese al siguiente link: [El_Rincón_del_Descanso]()
+
+### Librerias Utilizadas
+
+-[React Boostrap](https://react-bootstrap.netlify.app/) : Se utilizo para el estilo de la app.
+
+-[React Router Dom](https://reactrouter.com/) : Se utilizo para la nevegación dentro de la app.
+
+-[Firebase](https://firebase.google.com/): Se utilizo como base de datos. 
+
+-[SweetAlert2](https://sweetalert2.github.io/): Se utilizó para realizar algunas alertas. 
+
+
+
+Desarrollado por Jairo Sandoval.

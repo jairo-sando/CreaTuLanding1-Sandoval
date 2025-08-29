@@ -22,7 +22,7 @@ import { Link } from 'react-router-dom'
        )
     }
 
-    console.log (buyer)
+    
 
       const finalizarCompra = async (e) => {
         e.preventDefault()
@@ -44,7 +44,7 @@ import { Link } from 'react-router-dom'
     // Validación de datos del usuario
 
       if ( !buyer.name || !buyer.lastname ) {
-        setErrorMsg("⚠️ Porfavor complete los datos solicitados")
+        setErrorMsg("⚠️ Porfavor complete los datos solicitados ")
       return
       }
       
